@@ -1,7 +1,7 @@
 name: Android PR check
 on:
   pull_request:
-    types: [opened, edited, synchronize]
+    types: [opened, reopened, edited, synchronize]
 
 jobs:
   test-action:
