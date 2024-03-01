@@ -1,5 +1,6 @@
 name: Android PR check
 on:
+  push:
   pull_request:
     types: [opened, edited]
 
