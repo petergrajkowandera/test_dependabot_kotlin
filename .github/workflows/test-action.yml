@@ -1,0 +1,13 @@
+name: Android PR check
+on:
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+  test-action:
+    timeout-minutes: 100
+    runs-on: ubuntu-latest
+    steps:
+      - name: say halo
+        run: |
+          echo say no way
