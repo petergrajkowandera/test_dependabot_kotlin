@@ -2,6 +2,8 @@ name: Android PR check
 on:
   pull_request:
     types: [opened, reopened, synchronize]
+  issue_comment:
+    types: [created]
 
 jobs:
   test-action:
@@ -11,4 +13,4 @@ jobs:
     steps:
       - name: Print GitHub event action
         run: |
-          echo "${{ github.event_name }}"
+          echo "say hallo"
