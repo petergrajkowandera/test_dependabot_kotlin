@@ -1,14 +1,16 @@
 name: Android PR check
 on:
-  push:
   pull_request:
-    types: [opened, edited]
+    types: [opened, reopened, synchronize]
+  issue_comment:
+    types: [created]
 
 jobs:
   test-action:
+    if: github.event_name == 'pull_request' || contains(github.event.comment.body, '/rebase') || contains(github.event.comment.body, '/autosquash')
     timeout-minutes: 100
     runs-on: ubuntu-latest
     steps:
-      - name: say halo
+      - name: Print GitHub event action
         run: |
-          echo say no way
+          echo "say hallo"
