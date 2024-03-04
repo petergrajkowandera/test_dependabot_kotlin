@@ -6,11 +6,11 @@ plugins {
 
 android {
     namespace = "com.example.testdependabotapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.testdependabotapp"
-        minSdk = 26
+        minSdk = 30
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
