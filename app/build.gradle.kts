@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.testdependabotapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.testdependabotapp"
